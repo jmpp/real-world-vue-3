@@ -18,6 +18,7 @@ export default {
   created() {
     EventService.getEvent(this.id)
       .then((response) => (this.event = response.data))
+      // eslint-disable-next-line
       .catch((error) => console.log(error))
   },
 }
